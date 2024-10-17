@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #000
+  }
+  
+  /* Handle on hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
+
+
+  @font-face {
+    font-family: "myFont";
+    src: url('../fonts/Cyber\ City.otf');
+  }
+  @font-face {
+    font-family: "myFont2";
+    src: url('../fonts/BEASIGNE.otf');
+  }
+  @font-face {
+    font-family: "myFont3";
+    src: url('../fonts/PROCIRCUIT.ttf');
+  }
+  @font-face {
+    font-family: "myFont4";
+    src: url('../fonts/Overuse\ Bold\ Personal\ Use.otf');
+  }
+  @font-face {
+    font-family: "myFont5";
+    src: url('../fonts/Quick\ Starter.ttf');
+  }
+
+  .myfont{
+    font-family: "myFont";
+  }
+  .myfont2{
+    font-family: "myFont2";
+  }
+  .myfont3{
+    font-family: "myFont3";
+  }
+  .myfont4{
+    font-family: "myFont4";
+  }
+  .myfont5{
+    font-family: "myFont5";
+  }
+
+  .extra{
+    /* clip-path: polygon(0% 0%, 100% 0, 57% 100%, 0% 100%); */
+    clip-path: polygon(0% 0%, 100% 0, 89% 100%, 0% 100%);
+  }
+  .extra2{
+    clip-path: polygon(11% 0, 100% 0, 89% 100%, 0% 100%);
+  }
+  .middle{
+    transform: skew(-69deg);
+  }
+  .inner{
+    transform: skew(69deg);
+  }
+  .imageCover{
+    aspect-ratio: 277.5/392.04;
+  }
+
+  .aside{
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0 100%, 0 16%); */
+    /* clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0 100%, 0 13%); */
+    /* clip-path: polygon(36% 1%, 100% 0%, 100% 100%, 0 100%, 0 13%); */
+    /* clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 0 13%); */
+    /* clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 0 5%); */
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 26%);
+  }
+  .button{
+    clip-path: polygon(75% 0%, 100% 100%, 100% 100%, 0% 100%, 0 46%, 0 0);
+  }
+  .name-box{
+    /* clip-path: polygon(100% 0, 0% 100%, 100% 100%); */
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0 100%, 0% 50%); */
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0 100%, 0 100%);
+  }
+  .nameBox{
+    /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
+    /* clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0% 20%); */
+    clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(8% 0, 100% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+  }
+  /* .nameBox{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  } */
+  /* .nameBox{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  } */
+  .iconInner{
+    transform: skewY(-65deg);
+  }
+  .corner{
+    clip-path: polygon(100% 0, 100% 0%, 50% 50%, 0 100%, 0 0);
+  }
+  /* .textCover{
+    
+    clip-path: polygon(7% 0, 100% 0, 100% 76%, 93% 100%, 0 100%, 0 24%);
+  } */
+
+  /* clip-path: polygon(14% 0, 100% 0, 100% 83%, 87% 100%, 0 100%, 0 14%); */
+    /* clip-path: polygon(6% 0, 100% 0, 100% 83%, 95% 100%, 0 100%, 0 14%); */
+    /* clip-path: polygon(6% 0, 100% 0, 100% 88%, 93% 100%, 0 100%, 0 12%); */
+
+    .button-body{
+      transform: skew(-67deg);
+    }
+    .main-button{
+      transform: skew(0deg);
+    }
+
+    .box-skew{
+      transform: skew(-45deg);
+    }
+
+    .box-skew-reverse{
+      transform: skew(45deg);
+    }
+
+    @media only screen and (width < 350px) {
+      .myName{
+        font-size: 2.5rem;
+        display: inline;
+      }
+      body{
+        overflow-x: hidden;
+      }
+    }

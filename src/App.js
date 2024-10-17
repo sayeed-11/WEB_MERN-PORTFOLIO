@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Home from "./Components/fonts/Home";
+import About from "./Components/fonts/About";
+import Projects from "./Components/fonts/Projects";
 
 function App() {
+  const [isDark, setDark] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${isDark ? "dark bg-black" : "bg-white"}`}>
+      <Home isDark={isDark} setDark={setDark}/>
+      <About isDark={isDark}/>
+      <Projects isDark={isDark}/>
     </div>
   );
 }
